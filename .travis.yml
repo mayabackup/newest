@@ -1,18 +1,13 @@
 language: node_js
 
 node_js:
-  - "node"
-  
+  - "12"
+
 script:
+  - node server & 
+  - sleep 15
   - npx mocha tests
 
 before_script:
-  - npm install
-  - cd front-end
-  - npm install
-  - cd ..
   - cd back-end
   - npm install
-  - node server
-
-
