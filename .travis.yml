@@ -4,6 +4,7 @@ node_js:
   - "12"
   
  script:
+  - node -v
   - npx mocha tests
 
 before_script:
