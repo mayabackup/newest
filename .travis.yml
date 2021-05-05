@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "node"
   
- script:
+script:
   - npx mocha tests
 
 before_script:
