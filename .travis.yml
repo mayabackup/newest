@@ -3,13 +3,13 @@ language: node_js
 node_js:
   - "12"
 
-script:
-  - echo "skipping tests"
-
 before_script:
+  - npm install
+  - cd front-end
+  - npm install
+  - cd ..
   - cd back-end
   - npm install
-  - npm init
   - node server
-  - run mocha tests
+  - npx mocha tests
 
